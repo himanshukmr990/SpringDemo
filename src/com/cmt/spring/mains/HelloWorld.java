@@ -12,8 +12,11 @@ import org.springframework.stereotype.Component;
 @Component("helloWorld") 
 public class HelloWorld {
 	
+	private int counter;
+	
 	public void sayHello() {
 		System.out.println("Hello World.");
+		System.out.println("Counter: "+ ++counter);
 	}
 
 }
